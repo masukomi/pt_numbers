@@ -1,7 +1,16 @@
+// ==UserScript==
+// @name       Pivotal Tracker Story Numbers
+// @namespace  http://masukomi.org/
+// @homepage   https://github.com/masukomi/pt_numbers
+// @updateURL  https://raw2.github.com/masukomi/pt_numbers/master/pt_numbers.js
+// @downloadURL https://raw2.github.com/masukomi/pt_numbers/master/pt_numbers.js
+// @version    0.1
+// @description  displays the story numbers in pivotal tracker so that you can easily reference a particular one.
+// @match      https://www.pivotaltracker.com/s/projects/*
+// @copyright  2014+, masukomi.org
+// @author masukomi
+// ==/UserScript==
 
-//TODO refactor with a function to be able to add the story number
-// to any given story, such that we can call it when a new story is added
-// todo put it inside the story
 function loadStoryNumbers(){
 	console.log("running loadStoryNumbers");
 	var preview_headers = $('div.items div.item header.preview');
@@ -19,5 +28,6 @@ function displayStoryNumberInHeader(story_number, header_element){
 }
 
 setTimeout(loadStoryNumbers, 2000);
+
 
 
