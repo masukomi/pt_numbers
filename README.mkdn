@@ -1,0 +1,7 @@
+# Pivotal Tracker Numbers
+
+Every story in Pivotal Tracker has a unique numeric identifier. We find it much easier to refer to "story 12345" than "user sees a large gibbering monkey when pressing the click me button". This [Tampermonkey](http://tampermonkey.net/) script makes those numbers visible.
+
+## TODO
+### Display numbers for new stories
+Currently this just loads the numbers on page load. New stories will not have their numbers displayed until the page is refreshed.  The `displayStoryNumberInHeader` function can be used to display the number once we have hooked into the new story creation functionality.
